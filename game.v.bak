@@ -1,0 +1,58 @@
+module game(
+	n,
+	s,
+	e,
+	w,
+	reset,
+	clk,
+	s0,
+	s1,
+	s2,
+	s3,
+	s4,
+	d,
+	s5,
+	win,
+	s6
+);
+
+
+input wire	n;
+input wire	s;
+input wire	e;
+input wire	w;
+input wire	reset;
+input wire	clk;
+output wire	s0;
+output wire	s1;
+output wire	s2;
+output wire	s3;
+output wire	s4;
+output wire	d;
+output wire	s5;
+output wire	win;
+output wire	s6;
+
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_1;
+
+
+
+
+
+sword	b2v_inst1(
+	.clk(clk),
+	.reset(reset),
+	.sw(SYNTHESIZED_WIRE_0),
+	.v(SYNTHESIZED_WIRE_1));
+
+
+roomb2v_inst2(
+	.n(n),
+	.s(s),
+	.e(e),
+	.w(w),
+	.v(SYNTHESIZED_WIRE_1),
+	.reset(reset),
+	.clk(clk),
+	.s0(s0),

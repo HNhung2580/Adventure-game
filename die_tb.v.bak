@@ -1,0 +1,40 @@
+module die_tb();
+	reg clk, reset, n, s, w, e;
+	wire win, d, s6, s5, s4, s3, s2, s1, s0;
+	
+	game A0(.clk(clk), .reset(reset), .n(n), .e(e), .s(s), .w(w), .win(win), .d(d), .s6(s6), .s5(s5), .s4(s4), .s3(s3), .s2(s2), .s1(s1), .s0(s0));
+	
+	always
+		begin 
+			clk = 1; #10;
+			clk = 0; #10;
+		end
+	initial begin 
+		#10; // wait a bit so transitions don't occur on the clock edge
+
+		// cycle 0: reset to Cave of Cacophony
+		reset = 1;
+		n = 0; s = 0; e = 0; w = 0;
+		#100;
+
+		// cycle 1: east to Twisty Tunnel
+		reset = 0;
+		e = 1;
+		#100;
+
+		// cycle 2: south to Rapid River
+		e = 0;
+		s = 1;
+		#100;
+
+		// cycle 3: east to Dragon's Den
+		s = 0;
+		e = 1;
+		#100;
+
+		// cycle 4: die
+		s = 0;
+		#100;
+	end
+    
+endmodule

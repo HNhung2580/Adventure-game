@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Project/Lab6/simulation/modelsim
+vgame
+Z1 !s110 1638331254
+!i10b 1
+!s100 jV;oC=<4C2=z6b46lXIDf0
+IE:]:B=Pec0MmVe_WMAjA^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1638268026
+Z4 8game_7_1200mv_85c_slow.vo
+Z5 Fgame_7_1200mv_85c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1638331254.000000
+Z8 !s107 game_7_1200mv_85c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|game_7_1200mv_85c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vhard_block
+R1
+!i10b 1
+!s100 _<^@RUi@I4US5Lg5XgEGR2
+I_nejan@m3F=VE<LHR5<2Y3
+R2
+R0
+R3
+R4
+R5
+L0 669
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vwin_tb
+R1
+!i10b 1
+!s100 c4<3iNNO5h=T5GkJ80Ka<1
+IK7ED_4zlN01?SeH>]Ad@<3
+R2
+R0
+w1638268249
+8C:/intelFPGA_lite/18.1/Project/Lab6/win_tb.v
+FC:/intelFPGA_lite/18.1/Project/Lab6/win_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/intelFPGA_lite/18.1/Project/Lab6/win_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/Project/Lab6|C:/intelFPGA_lite/18.1/Project/Lab6/win_tb.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/Project/Lab6
+R12

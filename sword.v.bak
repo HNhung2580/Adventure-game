@@ -1,0 +1,56 @@
+module sword(
+	clk,
+	reset,
+	sw,
+	v
+);
+
+
+input wire	clk;
+input wire	reset;
+input wire	sw;
+output wire	v;
+
+wire	sword_and_to_flipflop;
+wire	swordandbottom;
+wire	swordandtop;
+wire	Swordorbottom;
+reg	Swordortop;
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_1;
+
+assign	SYNTHESIZED_WIRE_0 = 1;
+assign	SYNTHESIZED_WIRE_1 = 1;
+
+
+
+assign	swordandtop = Swordorbottom | Swordortop;
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_0 or negedge SYNTHESIZED_WIRE_1)
+begin
+if (!SYNTHESIZED_WIRE_0)
+	begin
+	Swordortop <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_1)
+	begin
+	Swordortop <= 1;
+	end
+else
+	begin
+	Swordortop <= sword_and_to_flipflop;
+	end
+end
+
+assign	swordandbottom =  ~reset;
+
+
+
+assign	sword_and_to_flipflop = swordandtop & swordandbottom;
+
+assign	v = Swordortop;
+assign	Swordorbottom = sw;
+
+endmodule

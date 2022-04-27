@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Project/Lab6/simulation/modelsim
+vdie_tb
+Z1 !s110 1638456411
+!i10b 1
+!s100 JHldE;c`FDS:kdoHDzA5?0
+IgWzmda68@ZMT9:Y>J8U9P1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638352685
+8C:/intelFPGA_lite/18.1/Project/Lab6/die_tb.v
+FC:/intelFPGA_lite/18.1/Project/Lab6/die_tb.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1638456411.000000
+!s107 C:/intelFPGA_lite/18.1/Project/Lab6/die_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/Project/Lab6|C:/intelFPGA_lite/18.1/Project/Lab6/die_tb.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/Project/Lab6
+Z7 tCvgOpt 0
+vgame
+R1
+!i10b 1
+!s100 QW;klOJJ@PamkR=VXabb11
+IeObD8LM5e]<M7^JR_ljj;3
+R2
+R0
+w1638351371
+8C:/intelFPGA_lite/18.1/Project/Lab6/game.v
+FC:/intelFPGA_lite/18.1/Project/Lab6/game.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1638456410.000000
+!s107 C:/intelFPGA_lite/18.1/Project/Lab6/game.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/Project/Lab6|C:/intelFPGA_lite/18.1/Project/Lab6/game.v|
+!i113 1
+R5
+R6
+R7
+vroom
+R1
+!i10b 1
+!s100 h7CN;k1ZJiQS^;c]P<@Ic0
+I^GQ18OHKRo9Kif9Wk=X`=3
+R2
+R0
+w1638351528
+8C:/intelFPGA_lite/18.1/Project/Lab6/room.v
+FC:/intelFPGA_lite/18.1/Project/Lab6/room.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Project/Lab6/room.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/Project/Lab6|C:/intelFPGA_lite/18.1/Project/Lab6/room.v|
+!i113 1
+R5
+R6
+R7
+vsword
+R1
+!i10b 1
+!s100 `PC?_;H_WYG=ATDR2kega2
+IkMoSoC^1j3kb_JnXRkdh81
+R2
+R0
+w1638333187
+8C:/intelFPGA_lite/18.1/Project/Lab6/sword.v
+FC:/intelFPGA_lite/18.1/Project/Lab6/sword.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Project/Lab6/sword.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/Project/Lab6|C:/intelFPGA_lite/18.1/Project/Lab6/sword.v|
+!i113 1
+R5
+R6
+R7

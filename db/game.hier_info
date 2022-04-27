@@ -1,0 +1,61 @@
+|game
+clk => clk.IN2
+reset => reset.IN2
+n => n.IN1
+s => s.IN1
+e => e.IN1
+w => w.IN1
+s0 <= room:A1.s0
+s1 <= room:A1.s1
+s2 <= room:A1.s2
+s3 <= room:A1.s3
+s4 <= room:A1.s4
+die <= room:A1.die
+s5 <= room:A1.s5
+win <= room:A1.win
+s6 <= room:A1.s6
+
+
+|game|sword:A0
+clk => Swordortop.CLK
+reset => sword_and_to_flipflop.IN1
+sw => swordandtop.IN1
+k <= Swordortop.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:A1
+clk => DFF_inst22.CLK
+clk => DFF_inst21.CLK
+clk => n24.CLK
+clk => S3_flop_output.CLK
+clk => S2_flop_out.CLK
+clk => S1_flop_out.CLK
+clk => S0_flop_out.CLK
+reset => n5.IN1
+reset => S3_and_to_flop.IN1
+reset => n10.IN1
+reset => n15.IN1
+reset => n18.IN1
+reset => n21.IN1
+reset => S1_and_to_flop.IN1
+n => S1_and_to_or_bottom.IN1
+s => n1.IN1
+e => n15.IN1
+e => S1_and_to_or_top.IN1
+e => n0.IN1
+w => n23.IN1
+w => S3_and_to_flop.IN1
+k => n21.IN1
+k => n18.IN1
+s6 <= DFF_inst22.DB_MAX_OUTPUT_PORT_TYPE
+s5 <= DFF_inst21.DB_MAX_OUTPUT_PORT_TYPE
+s4 <= n24.DB_MAX_OUTPUT_PORT_TYPE
+s3 <= S3_flop_output.DB_MAX_OUTPUT_PORT_TYPE
+sw <= S3_flop_output.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= S2_flop_out.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= S1_flop_out.DB_MAX_OUTPUT_PORT_TYPE
+s0 <= S0_flop_out.DB_MAX_OUTPUT_PORT_TYPE
+win <= DFF_inst22.DB_MAX_OUTPUT_PORT_TYPE
+die <= DFF_inst21.DB_MAX_OUTPUT_PORT_TYPE
+
+

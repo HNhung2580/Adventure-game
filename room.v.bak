@@ -1,0 +1,134 @@
+module room(
+	n,
+	s,
+	e,
+	w,
+	v,
+	reset,
+	clk,
+	s6,
+	win,
+	s5,
+	d,
+	s4,
+	s3,
+	sw,
+	s2,
+	s1,
+	s0
+);
+
+
+input wire	n;
+input wire	s;
+input wire	e;
+input wire	w;
+input wire	v;
+input wire	reset;
+input wire	clk;
+output wire	s6;
+output wire	win;
+output wire	s5;
+output wire	d;
+output wire	s4;
+output wire	s3;
+output wire	sw;
+output wire	s2;
+output wire	s1;
+output wire	s0;
+
+wire	e_input;
+wire	n_input;
+wire	not_reset_input;
+reg	S0_flop_out;
+wire	S1_and_to_flop;
+wire	S1_and_to_or_bottom;
+wire	S1_and_to_or_top;
+reg	S1_flop_out;
+wire	S1_or_to_and;
+reg	S2_flop_out;
+wire	S3_and_to_flop;
+reg	S3_flop_output;
+wire	w_input;
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_2;
+reg	SYNTHESIZED_WIRE_24;
+wire	SYNTHESIZED_WIRE_3;
+wire	SYNTHESIZED_WIRE_4;
+wire	SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_6;
+wire	SYNTHESIZED_WIRE_7;
+wire	SYNTHESIZED_WIRE_8;
+wire	SYNTHESIZED_WIRE_9;
+wire	SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_12;
+wire	SYNTHESIZED_WIRE_13;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_16;
+wire	SYNTHESIZED_WIRE_17;
+wire	SYNTHESIZED_WIRE_18;
+wire	SYNTHESIZED_WIRE_19;
+wire	SYNTHESIZED_WIRE_20;
+wire	SYNTHESIZED_WIRE_21;
+wire	SYNTHESIZED_WIRE_22;
+wire	SYNTHESIZED_WIRE_23;
+reg	DFF_inst22;
+reg	DFF_inst21;
+
+assign	s6 = DFF_inst22;
+assign	win = DFF_inst22;
+assign	s5 = DFF_inst21;
+assign	d = DFF_inst21;
+assign	s4 = SYNTHESIZED_WIRE_24;
+assign	SYNTHESIZED_WIRE_4 = 1;
+assign	SYNTHESIZED_WIRE_6 = 1;
+assign	SYNTHESIZED_WIRE_7 = 1;
+assign	SYNTHESIZED_WIRE_8 = 1;
+assign	SYNTHESIZED_WIRE_9 = 1;
+assign	SYNTHESIZED_WIRE_11 = 1;
+assign	SYNTHESIZED_WIRE_12 = 1;
+assign	SYNTHESIZED_WIRE_13 = 1;
+assign	SYNTHESIZED_WIRE_14 = 1;
+assign	SYNTHESIZED_WIRE_16 = 1;
+assign	SYNTHESIZED_WIRE_17 = 1;
+assign	SYNTHESIZED_WIRE_19 = 1;
+assign	SYNTHESIZED_WIRE_20 = 1;
+assign	SYNTHESIZED_WIRE_22 = 1;
+
+
+
+assign	SYNTHESIZED_WIRE_23 = S1_flop_out & w_input;
+
+assign	S3_and_to_flop = S2_flop_out & w_input & not_reset_input;
+
+assign	not_reset_input =  ~reset;
+
+assign	SYNTHESIZED_WIRE_3 =  ~v;
+
+assign	SYNTHESIZED_WIRE_2 = SYNTHESIZED_WIRE_0 | SYNTHESIZED_WIRE_1;
+
+assign	SYNTHESIZED_WIRE_10 = SYNTHESIZED_WIRE_2 & not_reset_input;
+
+assign	SYNTHESIZED_WIRE_15 = S2_flop_out & e_input & not_reset_input;
+
+assign	SYNTHESIZED_WIRE_18 = SYNTHESIZED_WIRE_24 & SYNTHESIZED_WIRE_3 & not_reset_input;
+
+assign	SYNTHESIZED_WIRE_21 = SYNTHESIZED_WIRE_24 & v & not_reset_input;
+
+
+always@(posedge clk or negedge SYNTHESIZED_WIRE_4 or negedge SYNTHESIZED_WIRE_6)
+begin
+if (!SYNTHESIZED_WIRE_4)
+	begin
+	S0_flop_out <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_6)
+	begin
+	S0_flop_out <= 1;
+	end
+else
+	begin
